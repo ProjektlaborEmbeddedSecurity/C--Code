@@ -1,0 +1,4 @@
+http://www.hightech-journal.net/externe-libraries-in-c-und-visual-studio-2010-einbinden
+
+
+Ws2_32.lib
