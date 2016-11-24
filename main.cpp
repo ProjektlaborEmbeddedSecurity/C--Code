@@ -28,6 +28,6 @@ int main(int argc, char* argv[])
 	printf("Received:\n%s", recData);
 
 	getchar();
-
+	connector.Shutdown();
 	return 0;
 }
