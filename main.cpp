@@ -14,8 +14,9 @@ int main(int argc, char* argv[])
 	connector.ConnectTCP();
 	
 	char data[2048] = "";
+	//POST funktioniert genauso
 	strcat_s(data, sizeof(data), "GET /api/groups/weather/send.json?x-aio-key=f27fa137d3934140a44974f37003de00&testfeed=5 HTTP/1.1\r\n");
-	strcat_s(data, sizeof(data), "Host: io.adafruit.com\r\n");
+	strcat_s(data, sizeof(data), "Host: io.adafruit.com\r\n\r\n");
 	//strcat_s(data, sizeof(data), "Connection: close\r\n");
 	//strcat_s(data, sizeof(data), "Accept-Charset: ISO-8859-1,UTF-8;q=0.7,*;q=0.7\r\n");
 	//strcat_s(data, sizeof(data), "Cache-Control: no-cache\r\n");
